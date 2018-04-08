@@ -1,0 +1,21 @@
+{
+	"name": "Name",
+	"onsale": "On sale",
+	"price": "Price",
+	"photo": "Photo",
+	"tags": "Tags",
+	"login": "Log in",
+	"languages": "Languages",
+	"welcome_message": "Welcome to Nodepop",
+	"search_input": "Search",
+	"introduction_message": "Buy and sell anything you want",
+	"adding_new": "Adding new Article",
+	"name__input": "Article name",
+	"price_input": "Price",
+	"tag_input": "Select tags",
+	"photo_input": "Select photo of the article",
+	"email_adress_input": "Email",
+	"password_input": "Password",
+	"submit_button": "Submit",
+	"sellorbuy_label": "Choose selling or purchase"
+}

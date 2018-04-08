@@ -1,0 +1,16 @@
+{
+	"apps": [
+		{
+			"name" : "service",
+			"script" : "photoThumbnailService.js",
+			"watch" : "photoThumbnailService.js",
+		}
+		// {
+		// 	"name" : "client",
+		// 	"script" : "photoThumbnailService",
+		// 	"watch" : "photoThumbnailService",
+		// },
+
+		//INTERESANTE. REPASAR LA DOC
+	]
+}

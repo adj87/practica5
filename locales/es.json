@@ -1,0 +1,21 @@
+{
+	"name": "Nombre",
+	"onsale": "A la venta",
+	"price": "Precio",
+	"photo": "Foto",
+	"tags": "etiquetas",
+	"login": "Iniciar sesion",
+	"languages": "Lenguajes",
+	"welcome_message": "Bienvenido a Nodepop",
+	"search_input": "Buscar",
+	"introduction_message": "El mejor portal para comprar y vender lo que quieras",
+	"adding_new": "Añadiendo nuevo articulo",
+	"name__input": "Nombre del articulo",
+	"price_input": "Precio",
+	"tag_input": "Seleccione tags",
+	"photo_input": "Seleccione foto",
+	"email_adress_input": "Introduzca su email",
+	"password_input": "Contraseña",
+	"submit_button": "Enviar",
+	"sellorbuy_label": "Selecciona venta o compra"
+}

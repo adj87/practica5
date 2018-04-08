@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background-color:"#f3f3f36e" 
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-light{
+	background-color: #164c82 !important;
+	color:white !important;
+}
+
+ul{
+	left:0 !important;
+}

@@ -1,0 +1,96 @@
+<%- include('partials/header')%> 
+<%- include('partials/navbar')%> 
+<div class="container" style="margin-top:20px;margin-bottom: 20px">
+<% if (message!=null) { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <%= message %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<% } %>  
+  
+    <h2><%= __('welcome_message') %></h2>
+    <h3><%= __('introduction_message') %></h3>
+    <table style="width:100%" class="table">
+      <thead>
+        <tr style="font-weight: bold">
+          <td><%= __('name') %></td>
+          <td><%= __('onsale') %></td>
+          <td><%= __('price') %></td>
+          <td><%= __('photo') %></td>
+          <td><%= __('tags') %></td>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <% anuncios.forEach(function(anuncio){ %>
+          <tr>
+            <td><%- anuncio.nombre %></td>
+            <td><%- anuncio.venta %></td>
+            <td><%- anuncio.precio %></td>
+            <td><img src="/<%- anuncio.foto %>" style="width:100px"></td>
+            <td><%- anuncio.tags %></td>
+        </tr>
+        <% }); %>
+
+      </tbody>
+    </table>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary right" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><%= __('adding_new') %></button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><%= __('adding_new') %></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="POST" action="apiv1/anuncios/" validate enctype="multipart/form-data">
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label"><%= __('name__input') %></label>
+              <input type="text" class="form-control" id="recipient-name" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label" type="number"><%= __('price_input') %></label>
+              <input class="form-control" id="message-text" name="precio" type="number" required></input>
+            </div>
+            <div class="form-group">
+               <label><%= __('sellorbuy_label') %></label>
+               <!-- <label style="display: block"><%= __('sellorbuy_label') %></label> -->
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="venta" id="inlineRadioVenta" value="true">
+              <label class="form-check-label" for="inlineRadioVenta">Venta</label>
+              <input class="form-check-input" type="radio" name="venta" id="inlineRadioCompra" value="false">
+              <label class="form-check-label" for="inlineRadioCompra">Compra</label>
+            </div>
+            <div class="form-group" style="margin-top:25px">
+              <label for="exampleFormControlSelect1"><%= __('tag_input') %></label>
+              <select multiple class="form-control" id="exampleFormControlSelect1" name="tags" required>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="motor">Motor</option>
+                <option value="work">Work</option>
+                <option value="mobile">Mobile</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlFile1"><%= __('photo_input') %></label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1" value="as" name="imagen" required>              
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-primary" value=<%= __('submit_button') %>>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer')%> 
