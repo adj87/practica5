@@ -12,7 +12,9 @@ App de venta de artículos de segunda mano.
 ### Instalamos y arrancamos MongoDB
 	
 ### Instalación de la base de datos
-	Con este comando crearemos la db e insertaremos articulos de prueba y arrancamos el microservicio de thumbnailer
+	
+    Con este comando crearemos la db e insertaremos articulos de prueba y arrancamos el microservicio de thumbnailer
+    
 	$ npm run installdb
 
 
@@ -48,11 +50,11 @@ http://localhost:3000/apiv1/anuncios?venta=false
 http://localhost:3000/apiv1/anuncios/tags
 ### Login
 Ahora podemos hacer login en el boton "iniciar sesion"; el cual nos devolverá un token. Ese token será requerido ahora para hacer peticiones a la dirección de la api :"http://localhost:3000/apiv1/anuncios"
-##Multiidioma
+## Multiidioma
 La plataforma es ahora multiidioma, incorpora inglés y español. En el menú de navegación podremos cambiar el lenguaje
-##Test
+## Test
 Podemos ejecutar los tres test que están en la carpeta test para verificar el buen funcionamiento de algunas de sus rutas (usando mocha)  
 
-##URL
-URL del despliegue de la app en [title](http://nodepop.mrjaurewi.com/)
+## URL
+URL del despliegue de la app en [http://nodepop.mrjaurewi.com/](http://nodepop.mrjaurewi.com/)
 
