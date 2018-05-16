@@ -51,5 +51,8 @@ Ahora podemos hacer login en el boton "iniciar sesion"; el cual nos devolverá u
 ##Multiidioma
 La plataforma es ahora multiidioma, incorpora inglés y español. En el menú de navegación podremos cambiar el lenguaje
 ##Test
-Podemos ejecutar los tres test que están en la carpeta test para verificar el buen funcionamiento de algunas de sus rutas (usando mocha)   
+Podemos ejecutar los tres test que están en la carpeta test para verificar el buen funcionamiento de algunas de sus rutas (usando mocha)  
+
+##URL
+URL del despliegue de la app en [title](http://nodepop.mrjaurewi.com/)
 
